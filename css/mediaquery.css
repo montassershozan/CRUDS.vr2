@@ -1,0 +1,24 @@
+/* @media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  }
+   */
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+
+    /*home section*/
+
+   #crud-sys{
+    width: 100% !important;
+   }
+
+   /*search section*/
+
+   #search-sec{
+    width: 100% !important;
+   }
+
+   /*tabel section*/
+   #tabl , #tabel{
+   width: 100% !important;
+  }
+}
+  

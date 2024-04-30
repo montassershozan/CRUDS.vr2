@@ -1,0 +1,18 @@
+body {
+  background-image: url(../imgs/pexels-bess-hamiti-36487.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+}
+.crud-sys {
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0.8rem 0.8rem 0.5rem #311717;
+  color: white;
+}
+.tabl {
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0.8rem 0.8rem 0.5rem #311717;
+  color: white;
+}

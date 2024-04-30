@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cruds SysTem : To Control Easy</title>
+    <link rel="icon" type="icon/png" href="imgs/crud.png">
+    <meta name="description" content="want to control your b.s use our cruds system you can create , update ..etc " />
+    <meta name="keywords" content="create,crud,update,retrive" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="stylesheet" href="css/index_style.css">
+</head>
+
+<body>
+    <!-- home section -->
+    <section id="crud-sys" class="crud-sys mt-3 container w-50 p-4">
+        <!-- head of section -->
+        <header class="head-sec">
+            <h1 class="text-center fw-bold text-primary-emphasis">CRUDS SYSTEM</h1>
+        </header>
+        <!-- content of section -->
+        <article class="content-sec">
+            <form class="frm">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label for="productname" class="mt-2">Product Name</label>
+                        <input class="form-control mt-2" type="text" name="productname" id="productname">
+                        <div class="alert alert-danger d-none mt-2" id="alert1" role="alert">
+                            <strong>Start with Cap Letter</strong>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <label for="productcategory" class="mt-2">Product Category</label>
+                        <input class="form-control mt-2" type="text" name="productcategory" id="productcategory">
+                        <div class="alert alert-danger d-none mt-2" role="alert" id="alert2">
+                            <strong>1Number(c)1Number</strong>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <label for="productprice" class="mt-2">Product Price</label>
+                        <input class="form-control mt-2" type="number" name="productprice" id="productprice">
+                        <div class="alert alert-danger mt-2 d-none" role="alert" id="alert3">
+                            <strong>Enter Numbers only (Max 5 Numbers)</strong>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <label for="productdescription" class="mt-2">Product Description</label>
+                        <textarea class="form-control mt-2" name="productdescription" id="productdescription" cols="2"
+                            rows="2"></textarea>
+                        <div class="alert alert-danger mt-2 d-none" role="alert" id="alert4">
+                            <strong>Enter Only Chars</strong>
+                        </div>
+                    </div>
+                    <div class="col-sm-12  mt-3">
+                        <button class="btn btn-primary me-2" id="addproduct">add
+                            product</button>
+                        <button class="btn btn-primary" id="clear">clear</button>
+                    </div>
+                </div>
+            </form>
+        </article>
+    </section>
+    <!-- search section -->
+    <section id="search-sec" class="row container w-50 p-4 m-auto mt-2">
+        <input type="text" name="searchbtn" placeholder="search..." id="searchbtn" class="form-control">
+    </section>
+    <!-- table of content -->
+    <section id="tabl" class="tabl mt-2 container w-75 p-4  position-relative ">
+        <table id="tabel" class="table  position-absolute top-0 start-0 end-0 bottom-0">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbdy">
+            </tbody>
+        </table>
+    </section>
+    <!-- pop-up message -->
+    <section class="popup-sec position-absolute top-0 start-0 end-0 bottom-0 d-none" id="popup-sec">
+        <div class="position-absolute top-50 start-50 translate-middle alert alert-danger p-5">
+            <div class="p-5">
+                <strong class="fs-2 text">Try Again !!</strong>
+            </div>
+            <div class="position-absolute top-0 end-0 p-3">
+                <i class="fa-solid fa-circle-xmark" id="closepopup"></i>
+            </div>
+        </div>
+    </section>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
